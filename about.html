@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - British Values</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; background: black; font-family: Arial, sans-serif; }
+        .page { width: 100%; max-width: 1200px; min-height: 100vh; margin: auto; background: black; }
+        .header { height: 105px; border-bottom: 3px solid #00a6a6; position: relative; display: flex; align-items: center; justify-content: space-between; padding: 3px 8px; }
+        .logo { width: 105px; height: 98px; object-fit: contain; }
+        .flag { width: 123px; height: 100px; object-fit: contain; }
+        .navigation { min-height: 43px; background: #aaa; border-bottom: 2px solid black; display: flex; flex-wrap: wrap; }
+        .navigation a { color: black; text-decoration: none; font-size: 17px; padding: 12px 15px; display: block; }
+        .navigation a:hover, .navigation a:focus { background: #777; color: white; }
+        .title { width: 90%; margin: 20px auto; border: 2px solid #777; color: white; text-align: center; padding: 10px; }
+        .about-section { display: flex; align-items: stretch; margin: 20px; }
+        .about-text { width: 53%; color: white; border: 2px solid #777; padding: 20px; text-align: center; font-size: 16px; line-height: 1.6; }
+        .about-image { width: 47%; min-height: 350px; object-fit: cover; }
+        .footer { color: white; text-align: center; font-size: 14px; padding: 20px; margin-top: 40px; }
+        @media (max-width: 600px) {
+            .header { height: 90px; }
+            .logo { width: 80px; height: 85px; }
+            .flag { width: 95px; height: 85px; }
+            .navigation a { font-size: 15px; padding: 12px 10px; }
+            .about-section { flex-direction: column; margin: 15px; }
+            .about-text, .about-image { width: 100%; }
+            .about-image { min-height: 250px; max-height: 350px; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <img class="logo" src="images/logo.png" alt="City council logo">
+        <img class="flag" src="images/uk-flag.png" alt="Union Jack flag">
+    </div>
+    <nav class="navigation" aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About us</a>
+        <a href="./gallery.html">Gallery</a>
+    </nav>
+    <div class="title"><h2>About us</h2></div>
+    <section class="about-section">
+        <div class="about-text">
+            <h3>About Us</h3>
+            <p>Our website is about British values and the importance of understanding the values that are part of British society.</p>
+            <p>We have created this website to provide information about Britain, its culture and important places.</p>
+            <p>British values encourage democracy, respect for the law, individual freedom, and respect and tolerance for people with different beliefs and backgrounds.</p>
+        </div>
+        <img class="about-image" src="images/big-ben.png" alt="Big Ben and the Houses of Parliament in London">
+    </section>
+    <div class="footer"><p>British Values Website</p></div>
+</div>
+</body>
+</html>
